@@ -3,7 +3,11 @@ export function handleHome(navigate) {
   }
   
   export function handleCart(navigate) {
-    navigate("/cart");
+    navigate("/carrinho");
+  }
+
+  export function handleCad(navigate) {
+    navigate("/*");
   }
   
   

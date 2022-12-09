@@ -1,14 +1,14 @@
 import Router from "./Router/Router";
-import styled from "styled-components";
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 export default function App() {
   return (
-    <AppContainer>
-      <h1 id="frutinhas">Labefrutas <span role="img" aria-label="frutinhas">🍌 🍉 🍇 🍓 </span></h1>
+    <>
+    <Header/>
+      
       <Router />
-    </AppContainer>
+    <Footer/>
+    </>
   );
 }
-const AppContainer = styled.div`
-   text-align: center;
-`;
