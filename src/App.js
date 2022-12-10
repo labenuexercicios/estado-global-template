@@ -6,7 +6,6 @@ export default function App() {
   return (
     <>
     <Header/>
-      
       <Router />
     <Footer/>
     </>

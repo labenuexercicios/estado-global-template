@@ -17,9 +17,9 @@ export default function Home({carrinho, setCarrinho}) {
           carrinho[i] = { ...carrinho[i], amount: carrinho[i].amount + 1 };
           
         } else {
-          const encontrarPlanera = planetas.find((planetas) => planetas.id === id);
-          const novaFruta = { ...encontrarPlanera, amount: 1 };
-          const newRender = [...carrinho, (carrinho[1] = novaFruta)];
+          const encontrarPlaneta = planetas.find((planetas) => planetas.id === id);
+          const novaPlaneta = { ...encontrarPlaneta, amount: 1 };
+          const newRender = [...carrinho, (carrinho[1] = novaPlaneta)];
           setCarrinho(newRender);
     }
 }
@@ -57,3 +57,4 @@ const CardPlanetas = styled.main`
   flex-direction: column;
   align-items: center;
 `;
+

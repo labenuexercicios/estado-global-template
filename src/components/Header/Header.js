@@ -18,6 +18,15 @@ function Header(){
                 </div>
                 <nav>
                     <ul>
+                        <select name = "Filtrar">
+                            <option value="">Filtrar</option>
+                            <option value="">Nome</option>
+                            <option value="">Preço mínimo</option>
+                            <option value="">Preço máximo</option>
+                            <option value="">Por ordem crescente</option>
+                            <option value="">Por ordem decrescente</option>
+                        </select>
+                    
                         <li>Lojas Próximas</li>
                         <li>Mundo de aventuras</li>
                         <li>Novos Planetas</li>
