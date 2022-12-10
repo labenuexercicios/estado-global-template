@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default function CardCarrinho({
   id,
-  url,
+  img,
   name,
   amount,
   price,
@@ -13,13 +13,13 @@ export default function CardCarrinho({
 
   return (
     <CardContainer>
-      <Image src={"https://www.proativaalimentos.com.br/image/cache/catalog/img_prod/oleo-essencia-morango-100ml-fruta-puro-essencia-massagem-D_NQ_NP_960102-MLB31202671230_062019-F[1]-1000x1000.jpg"} />
-      <p>{"Morango"}</p>
+      <Image src={img} />
+      <p>{name}</p>
       <p>
-        Qtd <b>{1}</b>
+        Qtd <b>{amount}</b>
       </p>
-      <p>R${10}</p>
-      <DeleteButton>x</DeleteButton>
+      <p>R${price},00</p>
+      <DeleteButton onClick={()=> deleteItem(id)}>X</DeleteButton>
     </CardContainer>
   );
 }
@@ -27,12 +27,15 @@ const Image = styled.img`
   width: 30%;
 `;
 const DeleteButton = styled.button`
-  background-color: tomato;
+  background-color: red;
   border: none;
+  text-align: center;
 `;
 const CardContainer = styled.section`
-  width: 300px;
+  width: 350px;
   border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(194, 184, 184);
   display: flex;
   justify-content: space-between;
   align-items: center;

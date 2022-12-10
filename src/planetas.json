@@ -1,0 +1,39 @@
+   [
+      {
+        "id": 1,
+        "name": "Terra",
+        "image": "./image/terra.png",
+        "price": 700
+      },
+      {
+        "id": 2,
+        "name": "Urano",
+        "image": "./image/urano.png",
+        "price": 900
+      },
+      {
+        "id": 3,
+        "name": "Jupter",
+        "image": "./image/jupter.png",
+        "price": 990
+      },
+      {
+        "id": 4,
+        "name": "Marte",
+        "image": "./image/marte.png",
+        "price": 700
+      },
+      {
+        "id": 5,
+        "name": "Mercurio",
+        "image": "./image/mercurio.png",
+        "price": 500
+      },
+      {
+        "id": 6,
+        "name": "Saturno",
+        "image": "./image/saturno.png",
+        "price": 990
+      }
+    ] 
+  
